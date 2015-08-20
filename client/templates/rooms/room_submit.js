@@ -15,7 +15,7 @@ Template.roomSubmit.events({
       title: $(e.target).find('[name=title]').val()
     };
 
-    Meteor.call('roomInsert', post, function(error, result) {
+    Meteor.call('roomInsert', room, function(error, result) {
       if (error) {
         return alert(error.reason);
       }
