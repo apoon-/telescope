@@ -1,0 +1,22 @@
+<template name="roomSubmit">
+  <form class="main form page">
+    <div class="form-group">
+      <label class="control-label" for="expire">Expiration</label>
+      <div class="controls">
+          <div class="input-group datetimepicker">
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-time"></span>
+              </span>
+              <input class="set-due-date form-control" type="text"/>
+          </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="Name your room" class="form-control"/>
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>
